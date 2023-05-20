@@ -138,10 +138,6 @@
   }    
 }
 
-body {
-  background:#0b1d2a;
-}
-
 
 @keyframes arrow
 {
@@ -409,7 +405,7 @@ footer ul {
 footer .line {
     width: 40px;
     height: 4px;
-    background-color: #ad4c01;
+    background-color: #fb00ff;
     margin-top: 12px;
     margin-bottom: 24px;
 }
@@ -446,12 +442,13 @@ footer .line {
   background: linear-gradient(to right, #038da5 , #5f0061);
   color: white;
 }
-
-#lband{
-  width: 90%;
-  height: 10%;
-  margin-top: 30%;
+#pdf{
+  width: 300px;
+  height: 1150px;
 }
+body{
+  overflow-x: hidden;
+   }
 }
 
 @media only screen and (min-width: 400px) {
@@ -467,12 +464,13 @@ footer .line {
   background: linear-gradient(to right, #038da5 , #5f0061);
   color: white;
 }
-
-#lband{
-  width: 50%;
-  height: 80%;
-  margin-top: 20%;
+#pdf{
+  width: 410px;
+  height: 1150px;
 }
+body{
+  overflow-x: hidden;
+   }
 }
 @media only screen and (min-width: 600px) {
   .title::after {
@@ -486,15 +484,14 @@ footer .line {
 #navbarNav a:hover{
   background: linear-gradient(to right, #038da5 , #5f0061);
   color: white;
-
-
 }
-
-#lband{
-  width: 50%;
-  height: 80%;
-  margin-top: 20%;
+#pdf{
+  width: 755px;
+  height: 1150px;
 }
+body{
+  overflow-x: hidden;
+   }
 }
 
 
@@ -508,10 +505,16 @@ footer .line {
       letter-spacing: 1px;
     }
     #navbarNav a:hover{
-      background: linear-gradient(to right, #038da5 , #5f0061);
+      background: linear-gradient( #038da5 , #5f0061);
       color: white;
     }
-  
+    #pdf{
+      width: 996px;
+      height: 1150px;
+    }
+    body{
+      overflow-x: hidden;
+       }
 }
 @media screen and (min-width: 1000px) {
   .title::after {
@@ -521,6 +524,22 @@ footer .line {
     font-family: 'Timeless', sans-serif;
 
   }
+  #navbarNav a:hover{
+    background: linear-gradient( #038da5 , #5f0061);
+    color: white;
+  }
+  #pdf{
+    width: 1950px;
+    height: 1470px;
+  }
+  body{
+    overflow-x: hidden;
+     }
+}
 
+
+#carouselExampleIndicators{
+  width: 50%;
+  margin-left: 24%;
 }
 
