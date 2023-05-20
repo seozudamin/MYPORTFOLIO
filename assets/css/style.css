@@ -1,0 +1,526 @@
+
+  @import url('https://fonts.cdnfonts.com/css/timeless?styles=11209');
+
+.title {
+  display: inline;
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 25px;
+  font-weight: lighter;
+  color:lightgray
+  
+  
+}
+
+/* loading Screen */
+.img-spinner  {
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index:9999;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  transition:all 2.9s ease;
+}
+.img-size {
+  width:13%;
+}
+@keyframes spinning {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg)}
+  
+}
+.img-cof {
+  width:22%;
+}
+.spin {
+  animation-name:spinning;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@media screen and (min-width: 1000px) {
+
+  .img-size {
+    width:10%;
+  }
+
+.img-cof {
+    width:9%;
+  }
+
+}
+
+@media screen and (min-width: 786px) {
+ 
+.img-size {
+      width: 7%;
+    }
+
+ .img-cof {
+      width:12%;
+    }
+  }
+
+
+
+/* VARIABLES */
+:root {
+  
+    --c-body: #ffffff;
+    --font-base: 'Timeless', sans-serif;;
+    --transition: all 0.5s ease;
+}
+
+
+#name {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  animation: flicker .5s infinite alternate;
+  color: #fff;
+  
+}
+#TOP{
+  font-size: 300%;
+  -webkit-text-stroke: 1px #000000;
+  color: transparent;
+  background: url(../images/back.jpg);
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  background-position: -1100px 0;
+  animation: backcolor 6s linear infinite;
+}
+@keyframes backcolor{
+  100%{
+    background-position: 0 0;
+  }
+}
+@media screen and (min-width: 300px) {
+ 
+  #TOP{
+    font-size: 200%;
+  } 
+}
+@media screen and (min-width: 600px) {
+ 
+  #TOP{
+    font-size: 250%;
+  } 
+}
+@media screen and (min-width: 786px) {
+ 
+  #TOP{
+    font-size: 500%;
+  } 
+}
+
+
+@media screen and (min-width: 1000px) {
+  #TOP{
+    font-size: 650%;
+  } 
+}
+
+
+
+/* Flickering animation */
+@keyframes flicker {
+    
+
+  
+  20%, 24%, 50%{        
+      text-shadow: none;
+  }    
+}
+
+body {
+  background:#0b1d2a;
+}
+
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow 
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+	animation-delay:-1s;
+	-webkit-animation-delay:-1s; 
+}
+
+.arrows path.a2 {
+	animation-delay:-0.5s;
+	-webkit-animation-delay:-0.5s; 
+}
+
+.arrows path.a3 {	
+	animation-delay:0s;
+	-webkit-animation-delay:0s; 
+}
+
+#nct{
+  font-family: 'Timeless', sans-serif;
+  font-size: 3vh;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+#read{
+ border-style: hidden;
+
+}
+
+body {
+
+    line-height: 1.7;
+    color: var(--c-body);
+    background: linear-gradient(to right, #00313a , #5f0061);
+    font-family: 'Timeless', sans-serif;
+    
+}
+
+ h1, h2, h3,h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: 600;
+    color: var(--c-dark);
+    color: rgb(255, 255, 255);
+  
+}
+
+.navbar-brand  {
+  
+    width: 60px;
+    height:auto;
+  
+}
+a {
+    text-decoration: none;
+    color: var(--c-brand);
+    transition: var(--transition);
+    
+}
+
+a:hover {
+    color: var(--c-brand-light);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section-padding {
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
+.theme-shadow {
+    box-shadow: var(--box-shadow);
+}
+
+/* IMAGE ZOOM */
+.image-zoom {
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.image-zoom-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.image-zoom-wrapper img{
+     transition: var(--transition);
+}
+
+.image-zoom:hover .image-zoom-wrapper img {
+    transform: scale(1.1);
+}
+
+
+/* NAVBAR */
+.navbar {
+    box-shadow: var(--box-shadow);
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    color: var(--c-dark);
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--c-brand);
+}
+
+
+#hero h1, h5{
+  color: #fafafa;
+}
+
+
+
+  .soial-links{
+    position:fixed;
+    top: 45%;
+    transform: translateY(-50%);
+    display: flex;
+    right: 20px;
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+}
+.soial-links a{
+    color: #fff;
+    font-size: 25px;
+    transition: 0.4s;
+}
+.soial-links a:hover{
+    transform: scale(1.4);
+}
+.soial-links span{
+    color: #fff;
+    font-weight: 500;
+    transform: rotate(90deg);
+    margin-bottom: 40px;
+}
+
+
+
+/* SECTION TITLE */
+.section-title {
+    margin-bottom: 60px;
+}
+
+.section-title .line {
+    width: 60px;
+    height: 4px;
+    background-color: var(--c-brand);
+    margin: 16px auto 24px auto;
+}
+
+.section-title p {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+
+/* ICONBOX */
+.iconbox {
+    width: 70px;
+    height: 70px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(var(--c-brand-rgb), 0.1);
+    color:#ffffff;
+    font-size: 34px;
+    flex: none;
+}
+
+#top{
+  align-items: right;
+}
+
+
+
+/* neon light */
+
+#apple,
+#instagram,
+#github,
+#facebook {
+  font-size: 1em;
+  background-color: #18191f;
+  color: #fff;
+  border-radius: 29px;
+  padding: 11px;
+ 
+  animation: animate 3s linear infinite;
+  text-shadow: 0 0 0px #0072ff, 0 0 00px #0072ff, 0 0 10px #0072ff,
+    0 0 00px #0072ff;
+}
+#instagram {
+  animation-delay: 0.3s;
+}
+#facebook {
+  animation-delay: 0.7s;
+}
+#github {
+  animation-delay: 0.1s;
+}
+@keyframes animate {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
+
+
+
+/* FOOTER */
+footer {
+    padding-top: 120px;
+}
+
+.footer-top {
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer-bottom {
+    padding-top: 40px;
+    padding-bottom: 40px;
+ 
+}
+
+
+footer li,
+footer p,
+footer a {
+    color: rgba(255,255,255,0.7);
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .line {
+    width: 40px;
+    height: 4px;
+    background-color: #ad4c01;
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 100px;
+}
+
+.social-icons a:hover {
+    background-color: var(--c-brand);
+    color: white;
+}
+
+#navbarNav{
+  margin-left: 1%;
+}
+
+@media only screen and (min-width: 300px) {
+  .title::after {
+    color:black;
+    content: "";
+    font-family: 'Timeless', sans-serif;
+    font-size: 4vh;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+#navbarNav a:hover{
+  background: linear-gradient(to right, #038da5 , #5f0061);
+  color: white;
+}
+
+#lband{
+  width: 90%;
+  height: 10%;
+  margin-top: 30%;
+}
+}
+
+@media only screen and (min-width: 400px) {
+  .title::after {
+    color:rgb(255, 255, 255);
+    content: "";
+    font-family: 'Timeless', sans-serif;
+    font-size: 4vh;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+#navbarNav a:hover{
+  background: linear-gradient(to right, #038da5 , #5f0061);
+  color: white;
+}
+
+#lband{
+  width: 50%;
+  height: 80%;
+  margin-top: 20%;
+}
+}
+@media only screen and (min-width: 600px) {
+  .title::after {
+    color:rgb(255, 255, 255);
+    content: "";
+    font-family: 'Timeless', sans-serif;
+    font-size: 4vh;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+#navbarNav a:hover{
+  background: linear-gradient(to right, #038da5 , #5f0061);
+  color: white;
+
+
+}
+
+#lband{
+  width: 50%;
+  height: 80%;
+  margin-top: 20%;
+}
+}
+
+
+@media screen and (min-width: 786px) {
+    .title::after {
+      color:rgb(255, 255, 255);
+      content: "";
+      font-family: 'Timeless', sans-serif;
+      font-size: 3.5vh;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    #navbarNav a:hover{
+      background: linear-gradient(to right, #038da5 , #5f0061);
+      color: white;
+    }
+  
+}
+@media screen and (min-width: 1000px) {
+  .title::after {
+    width:25%;
+    color:rgb(252, 252, 252);
+    content: "MY PORTFOLIO";
+    font-family: 'Timeless', sans-serif;
+
+  }
+
+}
+
